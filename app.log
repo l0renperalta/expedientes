@@ -1,0 +1,294 @@
+Starting...0 - 11:30:55
+
+
+Starting...1 - 11:30:55
+
+
+Error 1 : Message: timeout: Timed out receiving message from renderer: 29.616
+  (Session info: chrome-headless-shell=120.0.6099.109)
+Stacktrace:
+#0 0x55a825993f83 <unknown>
+#1 0x55a82564ccf7 <unknown>
+#2 0x55a8256327a1 <unknown>
+#3 0x55a82563244a <unknown>
+#4 0x55a8256307e1 <unknown>
+#5 0x55a82563118a <unknown>
+#6 0x55a82564207c <unknown>
+#7 0x55a82565a7c1 <unknown>
+#8 0x55a8256606bb <unknown>
+#9 0x55a82563192d <unknown>
+#10 0x55a82565a5c2 <unknown>
+#11 0x55a8256e5204 <unknown>
+#12 0x55a8256c5e53 <unknown>
+#13 0x55a82568ddd4 <unknown>
+#14 0x55a82568f1de <unknown>
+#15 0x55a825958531 <unknown>
+#16 0x55a82595c455 <unknown>
+#17 0x55a825944f55 <unknown>
+#18 0x55a82595d0ef <unknown>
+#19 0x55a82592899f <unknown>
+#20 0x55a825981008 <unknown>
+#21 0x55a8259811d7 <unknown>
+#22 0x55a825993124 <unknown>
+#23 0x7ff39b4829eb <unknown>
+
+Error 0 : Message: timeout: Timed out receiving message from renderer: 29.616
+  (Session info: chrome-headless-shell=120.0.6099.109)
+Stacktrace:
+#0 0x55b9a191ef83 <unknown>
+#1 0x55b9a15d7cf7 <unknown>
+#2 0x55b9a15bd7a1 <unknown>
+#3 0x55b9a15bd44a <unknown>
+#4 0x55b9a15bb7e1 <unknown>
+#5 0x55b9a15bc18a <unknown>
+#6 0x55b9a15cd07c <unknown>
+#7 0x55b9a15e57c1 <unknown>
+#8 0x55b9a15eb6bb <unknown>
+#9 0x55b9a15bc92d <unknown>
+#10 0x55b9a15e55c2 <unknown>
+#11 0x55b9a1670204 <unknown>
+#12 0x55b9a1650e53 <unknown>
+#13 0x55b9a1618dd4 <unknown>
+#14 0x55b9a161a1de <unknown>
+#15 0x55b9a18e3531 <unknown>
+#16 0x55b9a18e7455 <unknown>
+#17 0x55b9a18cff55 <unknown>
+#18 0x55b9a18e80ef <unknown>
+#19 0x55b9a18b399f <unknown>
+#20 0x55b9a190c008 <unknown>
+#21 0x55b9a190c1d7 <unknown>
+#22 0x55b9a191e124 <unknown>
+#23 0x7f4f385c29eb <unknown>
+
+
+
+
+
+porcentaje : 33.33333333333333
+
+
+Finished...0 - 11:31:26
+
+
+porcentaje : 33.33333333333333
+
+
+Finished...1 - 11:31:26
+
+
+Starting...2 - 11:31:26
+
+
+Starting...3 - 11:31:26
+
+
+
+
+ * Serving Flask app 'app' (lazy loading)
+
+ * Environment: production
+
+   WARNING: This is a development server. Do not use it in a production deployment.
+
+   Use a production WSGI server instead.
+
+ * Debug mode: on
+
+Starting...1 - 11:33:41
+Starting...0 - 11:33:41
+
+
+
+
+Error 0 : Message: 
+Stacktrace:
+#0 0x55ad21b7ef83 <unknown>
+#1 0x55ad21837cf7 <unknown>
+#2 0x55ad2188799e <unknown>
+#3 0x55ad21887aa1 <unknown>
+#4 0x55ad218d2d64 <unknown>
+#5 0x55ad218b10dd <unknown>
+#6 0x55ad218d0006 <unknown>
+#7 0x55ad218b0e53 <unknown>
+#8 0x55ad21878dd4 <unknown>
+#9 0x55ad2187a1de <unknown>
+#10 0x55ad21b43531 <unknown>
+#11 0x55ad21b47455 <unknown>
+#12 0x55ad21b2ff55 <unknown>
+#13 0x55ad21b480ef <unknown>
+#14 0x55ad21b1399f <unknown>
+#15 0x55ad21b6c008 <unknown>
+#16 0x55ad21b6c1d7 <unknown>
+#17 0x55ad21b7e124 <unknown>
+#18 0x7fb42bce29eb <unknown>
+
+
+
+Error 1 : Message: 
+Stacktrace:
+#0 0x55f47575af83 <unknown>
+#1 0x55f475413cf7 <unknown>
+#2 0x55f47546399e <unknown>
+#3 0x55f475463aa1 <unknown>
+#4 0x55f4754aed64 <unknown>
+#5 0x55f47548d0dd <unknown>
+#6 0x55f4754ac006 <unknown>
+#7 0x55f47548ce53 <unknown>
+#8 0x55f475454dd4 <unknown>
+#9 0x55f4754561de <unknown>
+#10 0x55f47571f531 <unknown>
+#11 0x55f475723455 <unknown>
+#12 0x55f47570bf55 <unknown>
+#13 0x55f4757240ef <unknown>
+#14 0x55f4756ef99f <unknown>
+#15 0x55f475748008 <unknown>
+#16 0x55f4757481d7 <unknown>
+#17 0x55f47575a124 <unknown>
+#18 0x7fcf38e6c9eb <unknown>
+
+
+
+Finished...0 - 11:34:01
+
+
+Finished...1 - 11:34:01
+
+
+Starting...2 - 11:34:01
+
+
+Starting...3 - 11:34:01
+
+
+Error 2 : Message: 
+Stacktrace:
+#0 0x559b58723f83 <unknown>
+#1 0x559b583dccf7 <unknown>
+#2 0x559b5842c99e <unknown>
+#3 0x559b5842caa1 <unknown>
+#4 0x559b58477d64 <unknown>
+#5 0x559b584560dd <unknown>
+#6 0x559b58475006 <unknown>
+#7 0x559b58455e53 <unknown>
+#8 0x559b5841ddd4 <unknown>
+#9 0x559b5841f1de <unknown>
+#10 0x559b586e8531 <unknown>
+#11 0x559b586ec455 <unknown>
+#12 0x559b586d4f55 <unknown>
+#13 0x559b586ed0ef <unknown>
+#14 0x559b586b899f <unknown>
+#15 0x559b58711008 <unknown>
+#16 0x559b587111d7 <unknown>
+#17 0x559b58723124 <unknown>
+#18 0x7f099401b9eb <unknown>
+
+
+
+Error 3 : Message: 
+Stacktrace:
+#0 0x56399e957f83 <unknown>
+#1 0x56399e610cf7 <unknown>
+#2 0x56399e66099e <unknown>
+#3 0x56399e660aa1 <unknown>
+#4 0x56399e6abd64 <unknown>
+#5 0x56399e68a0dd <unknown>
+#6 0x56399e6a9006 <unknown>
+#7 0x56399e689e53 <unknown>
+#8 0x56399e651dd4 <unknown>
+#9 0x56399e6531de <unknown>
+#10 0x56399e91c531 <unknown>
+#11 0x56399e920455 <unknown>
+#12 0x56399e908f55 <unknown>
+#13 0x56399e9210ef <unknown>
+#14 0x56399e8ec99f <unknown>
+#15 0x56399e945008 <unknown>
+#16 0x56399e9451d7 <unknown>
+#17 0x56399e957124 <unknown>
+#18 0x7ff394c8c9eb <unknown>
+
+
+
+Finished...2 - 11:34:24
+
+
+Starting...4 - 11:34:24
+
+
+Finished...3 - 11:34:24
+
+
+Starting...5 - 11:34:24
+
+
+Expediente : 
+ 
+00001-2005-0-1817-JR-CO-06
+
+
+Expediente : 
+ 
+00001-2005-0-1817-JR-CO-06
+
+
+Finished...4 - 11:34:29
+
+
+Starting...6 - 11:34:29
+
+
+Finished...5 - 11:34:29
+
+
+Starting...7 - 11:34:29
+
+
+Expediente : 
+ 
+00001-2005-0-1817-JR-CO-06
+
+
+Expediente : 
+ 
+00001-2005-0-1817-JR-CO-06
+
+
+Finished...7 - 11:34:33
+
+
+Starting...8 - 11:34:33
+
+
+Finished...6 - 11:34:33
+
+
+Starting...9 - 11:34:33
+
+
+Expediente : 
+ 
+00001-2005-0-1817-JR-CO-06
+
+
+Finished...8 - 11:34:37
+
+
+Expediente : 
+ 
+00001-2005-0-1817-JR-CO-06
+
+
+Finished...9 - 11:34:38
+
+
+Inicio de la ejecución11:33:41
+
+
+Fin de la ejecución11:34:38
+
+
+Success: 6
+
+
+Error: 4
+
+

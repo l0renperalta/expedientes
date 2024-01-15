@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flask Example with WebSocket</title>
+
+    <style>
+      #console {
+        width: 80%;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f8f8f8;
+        white-space: pre-wrap;
+      }
+      #progress {
+        width: 80%;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f8f8f8;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, Flask with WebSocket!</h1>
+
+    <form id="myForm">
+      <label for="requests">Número de Peticiones:</label>
+      <input type="file" name="requests" id="requests" required />
+
+      <label for="threads">Número de Hilos Paralelos:</label>
+      <input type="number" name="threads" id="threads" required />
+
+      <label for="process">Alert:</label>
+      <input type="number" name="alert" id="alert" required />
+
+      <button type="button" onclick="submitForm()">Enviar</button>
+    </form>
+
+    <form action="/descargar_expedientes" method="get">
+      <button type="submit">Descargar Expedientes</button>
+    </form>
+    <div id="progress">Progreso: -</div>
+    <div id="console"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.js"></script>
+    <script>
+      var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+      // Manejar eventos de salida de consola
+      socket.on('console_output', function (data) {
+        var consoleDiv = document.getElementById('console');
+        consoleDiv.innerText += data.message;
+      });
+      socket.on('progress_update', function (data) {
+        var progressDiv = document.getElementById('progress');
+        progressDiv.innerText = 'Progreso: ' + data.percentage.toFixed(2) + '%';
+      });
+
+      // Función para enviar el formulario al servidor
+      function submitForm() {
+        const formData = new FormData(document.getElementById('myForm'));
+        const data = {
+          requests: formData.get('requests'),
+          threads: formData.get('threads'),
+          alert: formData.get('alert'),
+        };
+
+        // Emitir el evento 'submit_form' al servidor a través de socket.io
+        socket.emit('submit_form', data);
+      }
+    </script>
+  </body>
+</html>
