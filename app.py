@@ -58,4 +58,4 @@ def descargar_expedientes():
     return send_file('exp.zip', as_attachment=True)
 
 if __name__ == "__main__":
-    socketio.run(app, host="0.0.0.0", port=5002, debug=True)
+    socketio.run(app, host="0.0.0.0", port=80, debug=True)
