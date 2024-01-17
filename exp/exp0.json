@@ -1,0 +1,271 @@
+{
+    "NumeroExpediente": "01338-2017-0-1706-JP-LA-01",
+    "OrganoJurisdiccional": "1\u00b0 JUZGADO PAZ LETRADO LABORAL - CHICLAYO",
+    "DistritoJudicial": "LAMBAYEQUE",
+    "Juez": "GARCIA CASTRO EDWIN ANDERSON",
+    "EspecialistaLegal": "LUIS ALBERTO BARRANTES VARGAS",
+    "FechaInicio": "19/04/2017",
+    "Proceso": "EJECUCION",
+    "Observacion": "----",
+    "Especialidad": "LABORAL",
+    "Materias": "OBLIGACION DE DAR SUMA DE DINERO",
+    "Estado": "ARCHIVO DEFINITIVO",
+    "EtapaProcesal": "GENERAL",
+    "FechaConclucion": "",
+    "Ubicacion": "ARCHIVO (ENVIADO)",
+    "MotivoConclucion": "-------",
+    "Sumilla": "DEMANDA   / / 1 - A - 16 - 1",
+    "partes_procesales": [
+        {
+            "Rol": "DEMANDADO",
+            "TipoPersona": "JURIDICA",
+            "ApellidoPaterno": "EMPRESA DE TRANSPORTE LUMAR EIRL",
+            "ApellidoMaterno": "",
+            "NombresORazonSocial": ""
+        },
+        {
+            "Rol": "DEMANDANTE",
+            "TipoPersona": "JURIDICA",
+            "ApellidoPaterno": "PRIMA AFP S.A.",
+            "ApellidoMaterno": "",
+            "NombresORazonSocial": ""
+        }
+    ],
+    "expedientes_seguimiento": [
+        {
+            "NumeroEsquina": 1,
+            "FechaResolucion": "20/12/2023 10:48",
+            "Resolucion": "",
+            "TipoNotificacion": "",
+            "Acto": "NOTA",
+            "Fojas": "",
+            "FechaProveido": "20/12/2023",
+            "Sumilla": "SE REMITE PARA SU ARCHIVO / EL EXPEDIENTE SE ENVI\u00d3 FUERA DE LA SEDE A ARCHIVO (ENVIADO) [G]",
+            "DescripcionUsuario": "INGRESADO POR:ZAMORA PARIONA RUTH",
+            "EnlaceDescarga": "",
+            "Notificaciones": []
+        },
+        {
+            "NumeroEsquina": 2,
+            "FechaResolucion": "19/12/2023",
+            "Resolucion": "NOTA",
+            "TipoNotificacion": "",
+            "Acto": "NOTA",
+            "Fojas": "1",
+            "FechaProveido": "19/12/2023",
+            "Sumilla": "POR REGULARIZAR ESTADO EN HITOS ESTADISTICOS",
+            "DescripcionUsuario": "DESCARGADO POR: LUIS ALBERTO BARRANTES VARGAS",
+            "EnlaceDescarga": "",
+            "Notificaciones": []
+        },
+        {
+            "NumeroEsquina": 3,
+            "FechaResolucion": "18/12/2023",
+            "Resolucion": "CINCO",
+            "TipoNotificacion": "",
+            "Acto": "DECRETO",
+            "Fojas": "1",
+            "FechaProveido": "18/12/2023",
+            "Sumilla": "REMITASE LOS ACTUADOS AL ARCHIVO CENTRAL DE ESTA CORTE SUPERIOR DE JUSTICIA PARA SU CUSTODIA.",
+            "DescripcionUsuario": "DESCARGADO POR: LUIS ALBERTO BARRANTES VARGAS",
+            "EnlaceDescarga": " \n \n \n1\u00b0 JUZGADO PAZ LETRADO LABORAL - CHICLAYO \nEXPEDIENTE : 01338-2017-0-1706-JP-LA-01 \nMATERIA  : OBLIGACION DE DAR SUMA DE DINERO \nJUEZ   : GARCIA CASTRO EDWIN ANDERSON \nESPECIALISTA : LUIS ALBERTO BARRANTES VARGAS \nDEMANDADO : EMPRESA DE TRANSPORTE LUMAR EIRL  \nDEMANDANTE : PRIMA AFP S.A.   \n \nRESOLUCION NUMERO: CINCO. \nChiclayo, dieciocho de diciembre \ndel a\u00f1o dos mil veintitr\u00e9s. \n                                               \n                                              Dado cuenta con la depuraci\u00f3n de expedientes, revisi\u00f3n d e \nautos y estando a que mediante Resoluci\u00f3n Administr ativa n\u00famero 210-2005-PCSJL/PJ \nde fecha 18 de julio del a\u00f1o dos mil cinco, dispone  la remisi\u00f3n al Archivo General de los \nexpedientes calificados para archivo debiendo ser r emitidos al Archivo Central para su \nconservaci\u00f3n, expedientes que, de acuerdo a su natu raleza o materia, se encuentran \nconcluidos o tienen cuatro meses o m\u00e1s sin impulso procesal. De la revisi\u00f3n de autos \nse verifica que el presente expediente se encuentra  sin movimiento desde hace m\u00e1s de \ndos a\u00f1os, al no haber sido activado por ninguna de las partes procesales, y en \ncumplimiento de lo dispuesto en la resoluci\u00f3n admin istrativa. REMITASE LOS \nACTUADOS AL ARCHIVO CENTRAL DE ESTA CORTE SUPERIOR DE JUSTICIA PARA SU \nCUSTODIA. Interviene el Secretario Judicial por Dis posici\u00f3n Superior, y suscribe la \npresente en aplicaci\u00f3n de la parte in fine del art\u00ed culo 122\u00b0 del C\u00f3digo Procesal Civil, \naplicable supletoriamente al presente proceso. PRES CINDASE de notificar. \n ",
+            "Notificaciones": []
+        },
+        {
+            "NumeroEsquina": 4,
+            "FechaResolucion": "20/05/2021",
+            "Resolucion": "CUATRO",
+            "TipoNotificacion": "Pta. Cedula Not.",
+            "Acto": "SENTENCIA FUNDADA",
+            "Fojas": "5",
+            "FechaProveido": "20/05/2021",
+            "Sumilla": "1] RECHAZAR EL ESCRITO DE CONTRADICCI\u00d3N FORMULADO POR LA DEMANDADA EMPRESA DE TRANSPORTES LUMAR EIRL\n2] FUNDADA LA DEMANDA INTERPUESTA POR PRIMA AFP SACONTRA LA EMPRESA DE TRANSPORTES LUMAR EIRL, SOBRE OBLIGACI\u00d3N DE DAR SUMA DE DINERO; EN CONSECUENCIA, ORDENO LLEVAR ADELANTE LA EJECUCI\u00d3N HASTA QUE LA PARTE DEMANDADA PAGUE A LA ENTIDAD EJECUTANTE LA SUMA DE S/. 30,524.01 (TREINTA MIL QUINIENTOS VEINTICUATRO CON 01/100 SOLES), M\u00c1S INTERESES LEGALES, CON COSTOS Y SIN COSTAS DEL PROCESO.\n3] CONSENTIDA O EJECUTORIADA QUE SEA LA PRESENTE, REMITASE AL \u00c1REA DE PERICIAS DEL M\u00d3DULO LABORAL, PARA LA LIQUIDACI\u00d3N DE INTERESES MORATORIOS.\n4] NOTIF\u00cdQUESE CONFORME A LEY.-",
+            "DescripcionUsuario": "DESCARGADO POR: FLORES DELGADO ALIA NADIR",
+            "EnlaceDescarga": "",
+            "Notificaciones": [
+                {
+                    "Destinatario": "PRIMA AFP S.A.",
+                    "Anexos": "RES. 04.-",
+                    "FechaResolucion": "20/05/2021",
+                    "FechaNotificacionImpresa": "",
+                    "FechaEnviadaCentralNotificacion": "25/06/2021",
+                    "FechaRecepcionadaCentralNotificacion": "",
+                    "FechaNotificacionDestinatario": "25/06/2021",
+                    "FechaCargoDevueltoJuzgado": "",
+                    "FormaEntrega": ""
+                },
+                {
+                    "Destinatario": "EMPRESA DE TRANSPORTE LUMAR EIRL",
+                    "Anexos": "RES. 04.-",
+                    "FechaResolucion": "20/05/2021",
+                    "FechaNotificacionImpresa": "",
+                    "FechaEnviadaCentralNotificacion": "25/06/2021",
+                    "FechaRecepcionadaCentralNotificacion": "",
+                    "FechaNotificacionDestinatario": "25/06/2021",
+                    "FechaCargoDevueltoJuzgado": "",
+                    "FormaEntrega": ""
+                }
+            ]
+        },
+        {
+            "NumeroEsquina": 5,
+            "FechaResolucion": "20/07/2020",
+            "Resolucion": "TRES",
+            "TipoNotificacion": "Pta. Cedula Not.",
+            "Acto": "DECRETO",
+            "Fojas": "1",
+            "FechaProveido": "20/07/2020",
+            "Sumilla": "DADO CUENTA CON LA RAZ\u00d3N QUE ANTECEDE Y CONFORME AL ESTADO DEL PROCESO. PONGANSE AUTOS A DESPACHO PARA EMITIR AUTO FINAL. AL ESCRITO DE FECHA22/06/2017: ESTESE A LO RESUELTO EN LA PRESENTE RESOLUCI\u00d3N. DEBIENDO LL",
+            "DescripcionUsuario": "DESCARGADO POR: ESQUIVES CUEVA ELIZABETH",
+            "EnlaceDescarga": "",
+            "Notificaciones": [
+                {
+                    "Destinatario": "PRIMA AFP S.A.",
+                    "Anexos": "RES. 3.-",
+                    "FechaResolucion": "20/07/2020",
+                    "FechaNotificacionImpresa": "",
+                    "FechaEnviadaCentralNotificacion": "22/07/2020",
+                    "FechaRecepcionadaCentralNotificacion": "",
+                    "FechaNotificacionDestinatario": "22/07/2020",
+                    "FechaCargoDevueltoJuzgado": "",
+                    "FormaEntrega": ""
+                },
+                {
+                    "Destinatario": "EMPRESA DE TRANSPORTE LUMAR EIRL",
+                    "Anexos": "RES. 3.-",
+                    "FechaResolucion": "20/07/2020",
+                    "FechaNotificacionImpresa": "",
+                    "FechaEnviadaCentralNotificacion": "22/07/2020",
+                    "FechaRecepcionadaCentralNotificacion": "",
+                    "FechaNotificacionDestinatario": "22/07/2020",
+                    "FechaCargoDevueltoJuzgado": "",
+                    "FormaEntrega": ""
+                }
+            ]
+        },
+        {
+            "NumeroEsquina": 6,
+            "FechaResolucion": "11/07/2018 15:55",
+            "Resolucion": "",
+            "TipoNotificacion": "",
+            "Acto": "REDISTRIBUCION",
+            "Fojas": "150",
+            "FechaProveido": "11/07/2018",
+            "Sumilla": "REDISTRIBUIDO DEL 1\u00b0 JUZGADO DE PAZ LETRADO CIVIL AL 1\u00b0 JUZGADO PAZ LETRADO LABORAL - CHICLAYO SEGUN RESOLUCION R.A. N\u00b0 816-2018-P JPL CIVIL JPL LAB NLPT",
+            "DescripcionUsuario": "INGRESADO POR:",
+            "EnlaceDescarga": "",
+            "Notificaciones": []
+        },
+        {
+            "NumeroEsquina": 7,
+            "FechaResolucion": "23/05/2018 15:22",
+            "Resolucion": "",
+            "TipoNotificacion": "",
+            "Acto": "REDISTRIBUCION",
+            "Fojas": "150",
+            "FechaProveido": "23/05/2018",
+            "Sumilla": "REDISTRIBUIDO DEL 1\u00b0 JUZGADO PAZ LETRADO LABORAL - CHICLAYO AL 1\u00b0 JUZGADO DE PAZ LETRADO CIVIL SEGUN RESOLUCION R.A.N\u00b0 493-2018-P-CSJLA/PJ JPL LAB - JPL CIVIL",
+            "DescripcionUsuario": "INGRESADO POR:",
+            "EnlaceDescarga": "",
+            "Notificaciones": []
+        },
+        {
+            "NumeroEsquina": 8,
+            "FechaResolucion": "23/06/2017",
+            "Resolucion": "DOS",
+            "TipoNotificacion": "Pta. Cedula Not.",
+            "Acto": "AUTO INADMISIBLE",
+            "Fojas": "1",
+            "FechaProveido": "23/06/2017",
+            "Sumilla": "1.\tDECLARAR INADMISIBLE LA EXCEPCI\u00d3N DEDUCIDA AL MANDATO EJECUTIVO PRESENTADA POR LA EMPRESA DE TRANSPORTES LUMAR E.I.RL, EN CONSECUENCIA, CONC\u00c9DASELE EL PLAZO PERENTORIO DE TRES DIAS A EFECTOS DE QUE CUMPLAN CON SUBSANAR LAS OMISIONES ADVERTIDAS BAJO APE",
+            "DescripcionUsuario": "DESCARGADO POR: FONSECA LOPEZ ARACELY",
+            "EnlaceDescarga": "",
+            "Notificaciones": [
+                {
+                    "Destinatario": "PRIMA AFP S.A.",
+                    "Anexos": "RESOLUCION N\u00b0 DOS",
+                    "FechaResolucion": "23/06/2017",
+                    "FechaNotificacionImpresa": "",
+                    "FechaEnviadaCentralNotificacion": "03/07/2017",
+                    "FechaRecepcionadaCentralNotificacion": "",
+                    "FechaNotificacionDestinatario": "03/07/2017",
+                    "FechaCargoDevueltoJuzgado": "",
+                    "FormaEntrega": ""
+                },
+                {
+                    "Destinatario": "EMPRESA DE TRANSPORTE LUMAR EIRL",
+                    "Anexos": "RESOLUCION N\u00b0 DOS",
+                    "FechaResolucion": "23/06/2017",
+                    "FechaNotificacionImpresa": "",
+                    "FechaEnviadaCentralNotificacion": "03/07/2017",
+                    "FechaRecepcionadaCentralNotificacion": "",
+                    "FechaNotificacionDestinatario": "03/07/2017",
+                    "FechaCargoDevueltoJuzgado": "",
+                    "FormaEntrega": ""
+                }
+            ]
+        },
+        {
+            "NumeroEsquina": 9,
+            "FechaResolucion": "22/06/2017 10:19",
+            "Resolucion": "TRES",
+            "TipoNotificacion": "",
+            "Acto": "ESCRITO",
+            "Fojas": "2",
+            "FechaProveido": "20/07/2020",
+            "Sumilla": "SOLICITO SE EMITA SENTENCIA",
+            "DescripcionUsuario": "INGRESADO POR:",
+            "EnlaceDescarga": "",
+            "Notificaciones": []
+        },
+        {
+            "NumeroEsquina": 10,
+            "FechaResolucion": "23/05/2017 12:59",
+            "Resolucion": "DOS",
+            "TipoNotificacion": "",
+            "Acto": "ESCRITO",
+            "Fojas": "22",
+            "FechaProveido": "23/06/2017",
+            "Sumilla": "FORMULO CONTRADICCION , FORMULO EXCEPCION  DE PRESCRIPCION EXTINTIVA",
+            "DescripcionUsuario": "INGRESADO POR:",
+            "EnlaceDescarga": "",
+            "Notificaciones": []
+        },
+        {
+            "NumeroEsquina": 11,
+            "FechaResolucion": "10/05/2017",
+            "Resolucion": "UNO",
+            "TipoNotificacion": "Pta. Cedula Not.",
+            "Acto": "AUTO ADMISORIO",
+            "Fojas": "1",
+            "FechaProveido": "10/05/2017",
+            "Sumilla": "EXPEDIENTE N\u00b0\t: 01338-2017-0-1706-JP-LA-01\nMATERIA\t\t: OBLIGACI\u00d3N DE DAR SUMA DE DINERO\nJUEZ\t\t\t: YESSICA PUPUCHE SENADOR \nEPECIALISTA\t: ARBAIZA RODRIGUEZ JHEYSON \nDEMANDADO\t: EMPRESA DE TRANSPORTE LUMAR EIRL\nDEMANDANTE\t: PRIMA AFP SA\n\nRESOLUCION NUMERO: UNO\n\nCHICLAYO, TRES DE ABRIL \nDEL DOS MIL DIECISIETE \n\n\n\tAUTOS Y VISTOS, DADO CUENTA CON EL ESCRITO DE DEMANDA Y ANEXOS QUE ANTECEDE Y;  CONSIDERANDO: PRIMERO: QUE, DO\u00d1A NELLY CRISTINA GONZALES QUISPE, EN CONDICI\u00d3N DE APODERADO DE PRIMA AFP SA, INTERPONE DEMANDA DE OBLIGACI\u00d3N DE DAR SUMA DE DINERO CONTRA EMPRESA DE TRANSPORTE LUMAR EIRL, PARA QUE CUMPLA CON CANCELAR LA SUMA DE: S/30,524.01(TREINTA MIL QUINIENTOS VEINTICUATRO CON 01/100 SOLES), PROVENIENTE DE APORTES PREVISIONALES, M\u00c1S LOS INTERESES MORATORIOS DEVENGADOS Y POR DEVENGARSE HASTA EL PAGO EFECTIVO DE LA DEUDA, GASTOS,  COSTAS Y COSTOS DEL PROCESO; SEGUNDO: QUE LA DEMANDA INTERPUESTA RE\u00daNE LOS REQUISITOS QUE NUESTRO ORDENAMIENTO PROCESAL CIVIL EXIGE PARA LA ADMISIBILIDAD Y PROCEDENCIA, ASIMISMO LAS LIQUIDACIONES PARA COBRANZA CONSTITUYEN TITULO EJECUTIVO, RESULTANDO PROCEDENTE ADMITIR LA MISMA, POR LO QUE DE CONFORMIDAD CON LOS ART\u00cdCULOS 2\u00b0, 130\u00b0, 424\u00b0, 425\u00b0, 688\u00b0 INCISO 11, 690\u00b0-A Y C DEL C\u00d3DIGO PROCESAL CIVIL Y EL ART\u00cdCULO 57\u00b0 INCISO G) DE LA LEY N\u00b0 29497, NUEVA LEY PROCESAL DEL TRABAJO, SE RESUELVE: ADMITIR  A TR\u00c1MITE EN LA V\u00cdA DE PROCESO DE EJECUCION LA DEMANDA INTERPUESTA POR DO\u00d1A NELLY CRISTINA GONZALES QUISPE APODERADO DE PRIMA AFP SA CONTRA EMPRESA DE TRANSPORTE LUMAR EIRL, SOBRE OBLIGACION DE DAR SUMA DE DINERO; EN CONSECUENCIA NOTIFIQUESE A LA EJECUTADA, PARA QUE DENTRO DEL T\u00c9RMINO DE CINCO DIAS DE NOTIFICADA CUMPLA CON PAGAR A LA EJECUTANTE PRIMA AFP SA LA SUMA DE: S/30,524.01 (TREINTA MIL QUINIENTOS VEINTE Y CUATRO CON 01/100 SOLES), M\u00c1S LOS INTERESES MORATORIOS DEVENGADOS Y POR DEVENGARSE HASTA EL PAGO EFECTIVO DE LA DEUDA, GASTOS,  COSTAS Y COSTOS DEL PROCESO, BAJO APERCIBIMIENTO DE INICIARSE LA EJECUCI\u00d3N FORZADA; AL SEGUNDO OTROS",
+            "DescripcionUsuario": "DESCARGADO POR: YESSICA PUPUCHE SENADOR",
+            "EnlaceDescarga": "",
+            "Notificaciones": [
+                {
+                    "Destinatario": "PRIMA AFP S.A.",
+                    "Anexos": "RESOLUCION N\u00b0 UNO",
+                    "FechaResolucion": "10/05/2017",
+                    "FechaNotificacionImpresa": "",
+                    "FechaEnviadaCentralNotificacion": "11/05/2017",
+                    "FechaRecepcionadaCentralNotificacion": "",
+                    "FechaNotificacionDestinatario": "11/05/2017",
+                    "FechaCargoDevueltoJuzgado": "",
+                    "FormaEntrega": ""
+                },
+                {
+                    "Destinatario": "EMPRESA DE TRANSPORTE LUMAR EIRL",
+                    "Anexos": "RESOLUCION N\u00b0 UNO + DEMANDA Y ANEXOS",
+                    "FechaResolucion": "10/05/2017",
+                    "FechaNotificacionImpresa": "11/05/2017",
+                    "FechaEnviadaCentralNotificacion": "11/05/2017",
+                    "FechaRecepcionadaCentralNotificacion": "12/05/2017",
+                    "FechaNotificacionDestinatario": "16/05/2017",
+                    "FechaCargoDevueltoJuzgado": "19/05/2017",
+                    "FormaEntrega": "OTRO MOTIVO DE ENTREGA"
+                }
+            ]
+        }
+    ]
+}

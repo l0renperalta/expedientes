@@ -3431,3 +3431,58 @@ Success: 1
 Error: 0
 
 
+Starting...0 - 11:24:35
+
+
+Error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\loren\Projects\fullstack\poderJudicial\virt2\Scripts\antiword.exe\__main__.py", line 7, in <module>
+  File "C:\Users\loren\Projects\fullstack\poderJudicial\virt2\Lib\site-packages\antiword.py", line 21, in main
+    r = run(cmd)
+        ^^^^^^^^
+  File "C:\Python312\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+
+
+Finished...0 - 11:24:49
+
+
+Inicio de la ejecución11:24:35
+
+
+Fin de la ejecución11:24:53
+
+
+Success: 1
+
+
+Error: 0
+
+
+Starting...0 - 11:25:07
+
+
+Finished...0 - 11:25:17
+
+
+Inicio de la ejecución11:25:07
+
+
+Fin de la ejecución11:25:21
+
+
+Success: 2
+
+
+Error: 0
+
+
