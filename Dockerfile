@@ -9,6 +9,7 @@ RUN apk add --no-cache \
     chromium \
     chromium-chromedriver \
     bash \
+    antiword \
     && pip install --no-cache-dir --upgrade pip
 
 # Copia los archivos de tu aplicación al contenedor

@@ -11,6 +11,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from . import parseFunctions as ps
 import pandas as pd
+import os
 
 # Mozilla Firefox
 # driver_path = 'path/to/geckodriver.exe'
@@ -36,21 +37,21 @@ def WebScrapingPoderJudicial(identificador, exp_cod, socketio):
     try:
         # service = Service(executable_path="/usr/bin/chromedriver")
         chrome_options = Options()
-        # chrome_options.binary_location = "/usr/bin/chromium-browser"
-        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--headless=new")
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
 
-        # chrome_options.add_experimental_option("prefs", {
-        #     "download.default_directory": "./exp",
-        #     "download.prompt_for_download": False,
-        #     "download.directory_upgrade": True,
-        #     "plugins.always_open_pdf_externally": False
-        # })
+        download_path = os.path.join(os.getcwd(), "exp", "files")
+        chrome_options.add_experimental_option('prefs', {
+            'download.default_directory': download_path,
+            'download.prompt_for_download': False,
+            'download.directory_upgrade': True,
+            'safebrowsing.enabled': True,
+        })
 
         # driver = webdriver.Chrome(service=service, options=chrome_options)
-        driver = webdriver.Chrome(options=chrome_options)
+        driver = webdriver.Chrome(options=chrome_options)      
         driver.set_page_load_timeout(30)
 
         driver.get("https://cej.pj.gob.pe/cej/forms/busquedaform.html")
@@ -119,8 +120,8 @@ def WebScrapingPoderJudicial(identificador, exp_cod, socketio):
             partes_procesales = driver.find_element(By.ID,"collapseTwo").get_attribute("outerHTML")
             seguimiento_expediente = driver.find_element(By.ID,"collapseThree").get_attribute("outerHTML")
             reporte_html = [reporte_expediente, partes_procesales, seguimiento_expediente]
-            
-            expediente = ps.extract_expediente_info(reporte_html, "exp"+str(identificador))
+
+            expediente = ps.extract_expediente_info(reporte_html, "exp"+str(identificador), driver)
             
             COUNT_SUCCESS += 1
     except Exception as e:

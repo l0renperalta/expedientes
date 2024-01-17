@@ -9,12 +9,17 @@ import json
 import os
 import boto3
 from botocore.exceptions import NoCredentialsError
+from selenium.webdriver.common.by import By
+import time
+import PyPDF2
+from bs4 import BeautifulSoup as bs
+import subprocess
 
 bucket_name = "expedientespjvf"
 s3_file_name = "nombre-en-s3/archivo.json"
+download_path = os.path.join(os.getcwd(), "exp", "files")
 
-
-def extract_expediente_info(html_content, nombre):
+def extract_expediente_info(html_content, nombre, driver):
     try:
         expediente = ReporteDeExpediente()
         doc = html.fromstring(html_content[0])
@@ -52,7 +57,7 @@ def extract_expediente_info(html_content, nombre):
             partes_procesales.append(proceso.__dict__)
 
 
-        seguimiento_data = get_values_seguimiento_expediente(html.fromstring(html_content[2]))
+        seguimiento_data = get_values_seguimiento_expediente(html.fromstring(html_content[2]), driver)
         expedientes_seguimiento = []
         # Extraer valores y llenar el objeto seguimiento_expediente
         for element in seguimiento_data:
@@ -136,10 +141,15 @@ def get_values_partes_procesales(doc):
     return results[1:]
 
 
-def get_values_seguimiento_expediente(doc):
+def get_values_seguimiento_expediente(doc, driver):
+    # elements = doc.xpath("//div[contains(@id, 'collapseThree')]/*")
+    # driver.execute_script("arguments[0].style.display = 'block';", element) for element in elements       change display: to none to block
+
     result = []
     count = 1
     seguimiento_count = doc.xpath('//*[@id="collapseThree"]/*')
+    firstDownloaded = False
+    setLastFileId = 0
     
     for i in range(2, len(seguimiento_count) + 1):
         expediente = []
@@ -147,42 +157,121 @@ def get_values_seguimiento_expediente(doc):
         
         exp_data = doc.xpath(f"//div[contains(@id, 'collapseThree')]/div[{i}]//div[contains(@class, 'row')]//div[contains(@class, 'borderinf')]")
         for element in exp_data:
-            print(element[0].text)                
-            if element[1].text:
-                expediente.append(element[1].text.strip())
-            else:
-                expediente.append("")
-                
-        enlace_id = doc.xpath(f"//div[contains(@id, 'collapseThree')]/div[{i}]//div[contains(@class, 'row')]//div[@class='dBotonDesc']/a/@href")
-        enlace_id[0].click()
+            expediente.append(element[1].text.strip()) if element[1].text else expediente.append("")
         
-        
-        if enlace_id != []:
-            expediente.append(f"https://cej.pj.gob.pe/cej/forms/{enlace_id[0]}")
+        download = doc.xpath(f"//div[contains(@id, 'collapseThree')]/div[{i}]//div[contains(@class, 'row')]//div[@class='dBotonDesc']/a")
+        if len(download) != 0 and not firstDownloaded:
+            setLastFileId = i
+            firstDownloaded = True
         else:
-            expediente.append('')
+            expediente.append("")
 
         notificaciones = []
         notifications_count = doc.xpath(f"//*[@id='pnlSeguimiento{count}']//*[@id='divResol']/div[1]/div[2]/*")
         
-        if len(notifications_count) != 0:
+        if len(notifications_count) != 0:        
             for i in range(1, len(notifications_count) + 1):
                 notificacion = []
                 noti_data = doc.xpath(f"//*[@id='modal-dialog-{count}-{i}']/div/div[2]/div/div//div[contains(@class, 'rowNotif')]")
                 
                 for element in noti_data[:-1]: # for para agregar los datos a la lista notificacion
-                    if element[1].text:
-                        notificacion.append(element[1].text.strip()) # se agrega a la lista notificacion los datos del modal
-                    else:
-                        notificacion.append('')
+                    notificacion.append(element[1].text.strip()) if element[1].text else notificacion.append('') # se agrega a la lista notificacion los datos del modal
 
                 notificaciones.append(notificacion)
         
         expediente.append(notificaciones)
-        print(f'expediente: {expediente}')
         
         result.append(expediente)
         count = count + 1
+    
+    # añadir el ultimo archivo al json
+    texto = downloadLastExp(setLastFileId, driver)
+    indice_ultimo = len(result[setLastFileId-2]) - 1
+    result[setLastFileId-2].insert(indice_ultimo, texto)
 
     return result # [..., [[...],[...]]]
     
+def downloadLastExp(setLastFileId, driver):
+    driver.find_element(By.XPATH, f"//div[contains(@id, 'collapseThree')]/div[{setLastFileId}]//div[contains(@class, 'row')]//div[@class='dBotonDesc']/a").click()
+    time.sleep(1)
+
+    archivo = os.listdir(download_path)[0]
+    if archivo.endswith(".pdf"):
+        reader = PyPDF2.PdfReader(f"{download_path}\\{archivo}")
+        texto = reader.pages[0].extract_text()
+        return texto
+    
+    if archivo.endswith(".doc"):
+        try:
+            result = subprocess.run(['antiword', os.path.join(download_path, archivo)], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            if result.returncode == 0:
+                return result.stdout
+            else:
+                print(f"Error: {result.stderr}")
+                return None
+
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return None
+        
+        # texto = subprocess.check_output(['antiword', os.path.join(download_path, file_name)], text=True)
+        # print(type(texto))
+        # print(texto)
+        # return texto
+
+    
+    # if archivo.endswith(".doc"):
+        # text = get_doc_text(download_path, archivo)
+        # print(text)
+
+        # with open(f"{download_path}\\{archivo}", 'r', encoding='utf-8', errors='ignore') as file:
+        #     soup = bs(file.read())
+        #     [s.extract() for s in soup(['style', 'script'])]
+        #     tmpText = soup.get_text()
+        #     texto = "".join("".join(tmpText.split('\t')).split('\n')).encode('utf-8').strip()
+        #     # texto = docx2txt.process(texto)
+        #     # print(texto)
+        #     extraer_texto_desde_bytes(texto)
+        #     return texto
+        
+# def get_doc_text(filepath, file):
+#     if file.endswith('.docx'):
+#        text = docx2txt.process(file)
+#        return text
+#     elif file.endswith('.doc'):
+#        # converting .doc to .docx
+#        doc_file = filepath + file
+#        docx_file = filepath + file + 'x'
+#        if not os.path.exists(docx_file):
+#           os.system('antiword ' + doc_file + ' > ' + docx_file)
+#           with open(docx_file) as f:
+#              text = f.read()
+#           os.remove(docx_file) #docx_file was just to read, so deleting
+#        else:
+#           # already a file with same name as doc exists having docx extension, 
+#           # which means it is a different file, so we cant read it
+#           print('Info : file with same name of doc exists having docx extension, so we cant read it')
+#           text = ''
+#        return text
+       
+
+# def extraer_texto_desde_bytes(doc_bytes):
+#     try:
+#         temp_file_path = f"{download_path}\\pr1.docx"
+#         with open(temp_file_path, 'wb') as temp_file:
+#             temp_file.write(doc_bytes)
+
+#         # Extraer texto del archivo temporal
+#         texto = docx2txt.process(temp_file_path)
+
+#         # Imprimir el texto o devolverlo según tus necesidades
+#         print(texto)
+
+#     except Exception as e:
+#         print(f"Error al extraer texto: {e}")
+
+#     finally:
+#         # Eliminar el archivo temporal
+#         if os.path.exists(temp_file_path):
+#             os.remove(temp_file_path)
+

@@ -18,7 +18,7 @@ class ReporteDeExpediente:
         self.Ubicacion = None
         self.MotivoConclucion = None
         self.Sumilla = None
-
+        self.ResumenUltimaResolucion = None
 
 class ParteProceso:
     def _init_(self):

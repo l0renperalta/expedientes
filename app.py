@@ -37,7 +37,7 @@ def handle_submit_form(data):
     requests = data["requests"]
     threads = int(data["threads"])
     alert = int(data["alert"])
-
+    
     # Lógica de la aplicación
     executeWebScraping(requests, threads,alert ,socketio)
 
